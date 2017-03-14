@@ -130,4 +130,12 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
+    <target name="test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="junitpack.test" todir="${junit.output.dir}"/>
+            <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
+        </junit>
+    </target>
 </project>
