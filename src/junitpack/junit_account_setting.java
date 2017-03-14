@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,12 +17,12 @@ public class junit_account_setting {
 
 	@Test
 	public void Account_Setting() throws Exception {
-		System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/Desktop/geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/Desktop/geckodriver.exe");
 				//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/Desktop/IEDriverServer.exe");
-				//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/Desktop/ChromeDriver.exe");
-				WebDriver driverChrome= new FirefoxDriver();
+				System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/Desktop/ChromeDriver.exe");
+				//WebDriver driverChrome= new FirefoxDriver();
 				//WebDriver driverChrome= new InternetExplorerDriver();
-				//WebDriver driverChrome= new ChromeDriver();
+				WebDriver driverChrome= new ChromeDriver();
 				
 				
 //				FirefoxProfile profile= new FirefoxProfile();
@@ -36,6 +37,7 @@ public class junit_account_setting {
 				//WebDriver driverChrome = new ChromeDriver();
 				WebDriverWait wait = new WebDriverWait(driverChrome, 10);
 				driverChrome.manage().window().maximize();
+				/*
 				driverChrome.navigate().to("https://alpha.kalay.us/");
 		//°j°é		for(int i = 0 ; i < 10; i++){
 				
@@ -50,17 +52,38 @@ public class junit_account_setting {
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.id("input-password")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			    driverChrome.findElement(By.id("input-password")).sendKeys("alex2457");
+			    driverChrome.findElement(By.id("input-password")).sendKeys("a13243537");
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.xpath("/html/body/div[@id='root']/div/section/form/div[3]/span")).click();
 			    Thread.sleep(1000);
+			    */
+				
+				driverChrome.navigate().to("https://k2-alpha.kalay.us/");
+
+				// °j°é for(int i = 0 ; i < 10; i++){
+				Thread.sleep(1000);
+				driverChrome.findElement(By.xpath("//span[@id='logo']")).click();
+				Thread.sleep(1000);
+				driverChrome.findElement(By.xpath("//*[@id='root']/div/section/form/div[1]/span")).click();
+				Thread.sleep(1000);
+				driverChrome.findElement(By.id("id_email")).clear();
+				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driverChrome.findElement(By.id("id_email")).sendKeys("alex_yang@tutk.com");
+				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driverChrome.findElement(By.id("id_password")).clear();
+				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driverChrome.findElement(By.id("id_password")).sendKeys("a13243537");
+				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driverChrome.findElement(By.xpath("//*[@id='submit']")).click();
+				Thread.sleep(5000);
+				
 			    driverChrome.findElement(By.xpath("//div[@id='header']/div/ul/li[2]/span/span[2]")).click();
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.linkText("§ó§ï±K½X")).click();
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.cssSelector("input.form-control")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("alex2457");
+			    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("a13243537");
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -96,11 +119,11 @@ public class junit_account_setting {
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).sendKeys("alex2457");
+			    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).sendKeys("a13243537");
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.xpath("(//input[@value=''])[3]")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			    driverChrome.findElement(By.xpath("(//input[@value=''])[3]")).sendKeys("alex2457");
+			    driverChrome.findElement(By.xpath("(//input[@value=''])[3]")).sendKeys("a13243537");
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.cssSelector("div.btn.btn-primary > span")).click();
 			    Thread.sleep(1000);
@@ -157,7 +180,7 @@ public class junit_account_setting {
 			  	    Thread.sleep(1000);
 			  	    driverChrome.findElement(By.cssSelector("input.form-control")).clear();
 			  	    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			  	    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("alex2457");
+			  	    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("a13243537");
 			  	  driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			  	    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).clear();
 			  	  driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -198,7 +221,7 @@ public class junit_account_setting {
 			  	    Thread.sleep(1000);
 			  	    driverChrome.findElement(By.cssSelector("input.form-control")).clear();
 			  	  driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			  	    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("alex2457");
+			  	    driverChrome.findElement(By.cssSelector("input.form-control")).sendKeys("a13243537");
 			  	  driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			  	    driverChrome.findElement(By.xpath("(//input[@value=''])[2]")).clear();
 			  	  driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -240,7 +263,7 @@ public class junit_account_setting {
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.id("input-password")).clear();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			    driverChrome.findElement(By.id("input-password")).sendKeys("alex2457");
+			    driverChrome.findElement(By.id("input-password")).sendKeys("a13243537");
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    driverChrome.findElement(By.xpath("/html/body/div[@id='root']/div/section/form/div[3]/span")).click();
 			    Thread.sleep(1000);

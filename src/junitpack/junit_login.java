@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,37 +21,39 @@ public class junit_login {
 	
 	@Test
 	public void Login() throws Exception {
-				System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/Desktop/geckodriver.exe");
+				//System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/Desktop/geckodriver.exe");
 				//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/Desktop/IEDriverServer.exe");
-				//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/Desktop/ChromeDriver.exe");
-				WebDriver driverChrome= new FirefoxDriver();
+				System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/Desktop/ChromeDriver.exe");
+				//WebDriver driverChrome= new FirefoxDriver();
 				//WebDriver driverChrome= new InternetExplorerDriver();
-				//WebDriver driverChrome= new ChromeDriver();
+				WebDriver driverChrome= new ChromeDriver();
 				WebDriverWait wait = new WebDriverWait(driverChrome, 10);
 		//login
 					driverChrome.manage().window().maximize();
-					driverChrome.navigate().to("https://alpha.kalay.us/");
+					driverChrome.navigate().to("https://k2-alpha.kalay.us/");
 					
 		//°j°é		for(int i = 0 ; i < 10; i++){
-					driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+					Thread.sleep(1000);
 					driverChrome.findElement(By.xpath("//span[@id='logo']")).click();
 					Thread.sleep(1000);
-					driverChrome.findElement(By.id("input-email")).clear();
+					driverChrome.findElement(By.xpath("//*[@id='root']/div/section/form/div[1]/span")).click();
 					Thread.sleep(1000);
-				    driverChrome.findElement(By.id("input-email")).sendKeys("b24571111@gmail.com");
-				    Thread.sleep(1000);
-				    driverChrome.findElement(By.id("input-password")).clear();
-				    Thread.sleep(1000);
-				    driverChrome.findElement(By.id("input-password")).sendKeys("alex2457");
+					driverChrome.findElement(By.id("id_email")).clear();
+					driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				    driverChrome.findElement(By.id("id_email")).sendKeys("alex_yang@tutk.com");
 				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				    driverChrome.findElement(By.xpath("/html/body/div[@id='root']/div/section/form/div[3]/span")).click();
+				    driverChrome.findElement(By.id("id_password")).clear();
 				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				    Thread.sleep(1000);
+				    driverChrome.findElement(By.id("id_password")).sendKeys("a13243537");
+				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				    driverChrome.findElement(By.xpath("//*[@id='submit']")).click();
+				    Thread.sleep(2000);
+			/*	    
 		//logout
 				    driverChrome.findElement(By.cssSelector("[class='navi_user list_icon']")).click();
 				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					driverChrome.findElement(By.linkText("µn¥X")).click();
-				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+					driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				    
 		//keyin Email address: Abnormal    
 				    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -233,6 +236,7 @@ public class junit_login {
 					FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
 					
 		//°j°é			}
+		 */
 				    driverChrome.quit();
 				    Thread.sleep(1000);
 			}

@@ -55,11 +55,11 @@ public class junit_purchase_plan {
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[1]/input")).clear();
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[1]/input")).sendKeys("NWY1DSTTCS87JCLE111A");
+				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[1]/input")).sendKeys("H8DDXGD2T936NK88111A");
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[2]/input")).clear();
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[2]/input")).sendKeys("miosmart");
+				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[2]/input")).sendKeys("888888ii");
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				driverChrome.findElement(By.xpath("//*[@id='addDeviceModal']/div/div/div[2]/div/div[3]/input")).clear();
 				driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -70,8 +70,8 @@ public class junit_purchase_plan {
 				driverChrome.findElement(By.xpath("//*[@id='pickColorModal']/div/div/div[3]/div/div[2]/span")).click();
 				Thread.sleep(3000);
 				String Add_Camera = "auto_test";
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[data-reactid='.0.1.1.0:$NWY1DSTTCS87JCLE111A.0.1']")));
-				String element1 = driverChrome.findElement(By.cssSelector("div[data-reactid='.0.1.1.0:$NWY1DSTTCS87JCLE111A.0.1']")).getText();
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[data-reactid='.0.1.1.0:$H8DDXGD2T936NK88111A.0.1']")));
+				String element1 = driverChrome.findElement(By.cssSelector("div[data-reactid='.0.1.1.0:$H8DDXGD2T936NK88111A.0.1']")).getText();
 			    driverChrome.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			    if(Add_Camera.equals(element1) == true){
 			    		System.out.println("Add_Camera = pass");
@@ -320,7 +320,7 @@ public class junit_purchase_plan {
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.xpath("//li[@id='plan_box']/a[2]/span[2]")).click();
 			    Thread.sleep(1000);
-			    driverChrome.findElement(By.id("img-NWY1DSTTCS87JCLE111A")).click();
+			    driverChrome.findElement(By.id("img-H8DDXGD2T936NK88111A")).click();
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.cssSelector("div.blockBtn2.bindingBtn")).click();
 			    Thread.sleep(1000);
@@ -369,7 +369,7 @@ public class junit_purchase_plan {
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.xpath("//li[@id='plan_box']/a[2]/span[2]")).click();
 			    Thread.sleep(1000);
-			    driverChrome.findElement(By.id("img-NWY1DSTTCS87JCLE111A")).click();
+			    driverChrome.findElement(By.id("img-H8DDXGD2T936NK88111A")).click();
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.linkText("ªð¦^")).click();
 			    Thread.sleep(1000);
@@ -385,7 +385,7 @@ public class junit_purchase_plan {
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.xpath("//li[@id='plan_box']/a[2]/span[2]")).click();
 			    Thread.sleep(1000);
-			    driverChrome.findElement(By.id("img-NWY1DSTTCS87JCLE111A")).click();
+			    driverChrome.findElement(By.id("img-H8DDXGD2T936NK88111A")).click();
 			    Thread.sleep(1000);
 			    driverChrome.findElement(By.cssSelector("div.blockBtn2.bindingBtn")).click();
 			    Thread.sleep(1000);
