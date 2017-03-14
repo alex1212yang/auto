@@ -44,7 +44,6 @@
         <pathelement location="lib/netty-3.5.7.Final.jar"/>
         <pathelement location="lib/phantomjsdriver-1.3.0.jar"/>
         <pathelement location="lib/sac-1.3.jar"/>
-        <pathelement location="lib/selenium-html-runner-3.0.1.jar"/>
         <pathelement location="lib/selenium-java-2.53.0.jar"/>
         <pathelement location="lib/selenium-java-2.53.0-srcs.jar"/>
         <pathelement location="lib/selenium-server-standalone-3.0.1.jar"/>
