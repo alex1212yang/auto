@@ -13,18 +13,16 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import java.io.File;
 
 public class ScreenshotTests {
-private static ChromeDriverService service;
+
 
 		@Test
 		public void Account_Setting() throws Exception {
-					//System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-					service = new ChromeDriverService.Builder().usingDriverExecutable(new File("D:\\ChromeDriver.exe"))
-			        	.usingAnyFreePort().build();
+					System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
 					//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/IEDriverServer.exe");
 					//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/ChromeDriver.exe");
-					//WebDriver driverChrome= new FirefoxDriver();
+					WebDriver driverChrome= new FirefoxDriver();
 					//WebDriver driverChrome= new InternetExplorerDriver();
-					WebDriver driverChrome= new ChromeDriver();
+					//WebDriver driverChrome= new ChromeDriver();
 					
 					
 					WebDriverWait wait = new WebDriverWait(driverChrome, 10);
