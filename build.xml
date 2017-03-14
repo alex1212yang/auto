@@ -91,7 +91,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="junit_account_setting (1)">
+    <target name="junit_account_setting">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -99,7 +99,7 @@
             <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
         </junit>
     </target>
-    <target name="junit_add_camera (1)">
+    <target name="junit_add_camera">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -107,7 +107,7 @@
             <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
         </junit>
     </target>
-    <target name="junit_camera_setting (1)">
+    <target name="junit_camera_setting">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -115,7 +115,7 @@
             <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
         </junit>
     </target>
-    <target name="ScreenshotTests (2)">
+    <target name="ScreenshotTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
