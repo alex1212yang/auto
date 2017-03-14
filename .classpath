@@ -30,7 +30,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/netty-3.5.7.Final.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/phantomjsdriver-1.3.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/sac-1.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/selenium-html-runner-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/selenium-java-2.53.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/selenium-java-2.53.0-srcs.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/lib/selenium-server-standalone-3.0.1.jar"/>
