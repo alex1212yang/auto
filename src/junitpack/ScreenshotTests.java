@@ -16,9 +16,9 @@ public class ScreenshotTests {
 
 		@Test
 		public void Account_Setting() throws Exception {
-					System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/Desktop/geckodriver.exe");
-					//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/Desktop/IEDriverServer.exe");
-					//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/Desktop/ChromeDriver.exe");
+					System.setProperty("webdriver.gecko.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/geckodriver.exe");
+					//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/IEDriverServer.exe");
+					//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/ChromeDriver.exe");
 					WebDriver driverChrome= new FirefoxDriver();
 					//WebDriver driverChrome= new InternetExplorerDriver();
 					//WebDriver driverChrome= new ChromeDriver();
