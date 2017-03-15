@@ -130,6 +130,23 @@
             <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
         </junit>
     </target>
+    <target name="junitproject_kalay_vsaas_3.0">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="junitpack.AllTests" todir="${junit.output.dir}"/>
+            <test name="junitpack.ScreenshotTests" todir="${junit.output.dir}"/>
+            <test name="junitpack.WEB_Mutidevice" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_account_setting" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_add_camera" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_camera_setting" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_create_account" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_login" todir="${junit.output.dir}"/>
+            <test name="junitpack.junit_purchase_plan" todir="${junit.output.dir}"/>
+            <test name="junitpack.test" todir="${junit.output.dir}"/>
+            <classpath refid="junitproject_kalay_vsaas_3.0.classpath"/>
+        </junit>
+    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
