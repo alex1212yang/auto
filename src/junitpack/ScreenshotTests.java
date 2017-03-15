@@ -27,14 +27,14 @@ public class ScreenshotTests {
 		@Test
 		public void Account_Setting() throws Exception {
 					//System.setProperty("webdriver.gecko.driver", "C:\\Program Files (x86)\\Jenkins\\workspace\\junit_web\\geckodriver.exe");
-					service = new ChromeDriverService.Builder().usingDriverExecutable(new File("D:\\ChromeDriver.exe"))
+					service = new ChromeDriverService.Builder().usingDriverExecutable(new File("D:\\geckodriver.exe"))
 			        .usingAnyFreePort().build();
 					
 					//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/IEDriverServer.exe");
 					//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/ChromeDriver.exe");
-					//WebDriver driverChrome= new FirefoxDriver();
+					WebDriver driverChrome= new FirefoxDriver();
 					//WebDriver driverChrome= new InternetExplorerDriver();
-					WebDriver driverChrome= new ChromeDriver();
+					//WebDriver driverChrome= new ChromeDriver();
 					
 					
 					WebDriverWait wait = new WebDriverWait(driverChrome, 10);
