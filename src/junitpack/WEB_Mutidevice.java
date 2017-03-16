@@ -21,14 +21,14 @@ public class WEB_Mutidevice {
 	
 			@Test
 			public void executeFirefoxDriver() throws MalformedURLException {
-				this.execute(DesiredCapabilities.internetExplorer());
+				this.execute(DesiredCapabilities.firefox());
 				//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/Desktop/IEDriverServer.exe");
 			}
 
 			
-//			public void executeChrome() throws MalformedURLException {
-//				this.execute(DesiredCapabilities.chrome());
-//			}
+			public void executeChrome() throws MalformedURLException {
+				this.execute(DesiredCapabilities.chrome());
+			}
 			
 			private void execute(final DesiredCapabilities capability) throws MalformedURLException {
 				WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability

@@ -25,7 +25,7 @@
     
         cur['ant.project.default-target'] = 'build';
     
-        cur['ant.project.invoked-targets'] = 'build,test,junitreport';
+        cur['ant.project.invoked-targets'] = 'build,ScreenshotTests,junitreport';
     
         cur['ant.project.name'] = 'junitproject_kalay_vsaas_3.0';
     
@@ -213,7 +213,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner junitpack.ScreenshotTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junit\\TEST-junitpack.ScreenshotTests.xml crashfile=C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junitvmwatcher4713458816805982317.properties propsfile=C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junit8934018471016660901.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner junitpack.ScreenshotTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junit\\TEST-junitpack.ScreenshotTests.xml crashfile=C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junitvmwatcher6134762509120868116.properties propsfile=C:\\Users\\alexyang\\workspace\\junitproject_kalay_vsaas_3.0\\junit404729777363266558.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -284,7 +284,7 @@
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a title="Display all tests" href="0_ScreenshotTests.html">ScreenshotTests</a></td><td><a title="Display all tests" href="0_ScreenshotTests.html">1</a></td><td><a title="Display only errors" href="0_ScreenshotTests-errors.html">1</a></td><td>0</td><td>0</td><td>5.093</td><td>2017-03-14T07:41:02</td><td>TPE-Alex-Yang</td>
+<td><a title="Display all tests" href="0_ScreenshotTests.html">ScreenshotTests</a></td><td><a title="Display all tests" href="0_ScreenshotTests.html">1</a></td><td><a title="Display only errors" href="0_ScreenshotTests-errors.html">1</a></td><td>0</td><td>0</td><td>0.802</td><td>2017-03-16T02:33:50</td><td>TPE-Alex-Yang</td>
 </tr>
 </table>
 <h2>Errors</h2>
@@ -293,15 +293,13 @@
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a name="Account_Setting"></a>Account_Setting</td><td>Error</td><td>Failed to decode response from marionette
+<td><a name="executeFirefoxDriver"></a>executeFirefoxDriver</td><td>Error</td><td>Unable to create new remote session. desired capabilities = Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}], required capabilities = Capabilities [{}]
 Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
 System info: host: 'TPE-Alex-Yang', ip: '192.168.40.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_74'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\alexyang\AppData\Local\Temp\rust_mozprofile.4Qxq6L4tZWqx, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0, platformVersion=6.3, moz:processID=9208, browserName=firefox, platformName=windows_nt}]
-Session ID: e42b061c-6479-4543-9b53-de0ba1e45a9e<br>
+Driver info: driver.version: RemoteWebDriver<br>
 <br>
-<code>org.openqa.selenium.WebDriverException: Failed to decode response from marionette<br>Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'<br>System info: host: 'TPE-Alex-Yang', ip: '192.168.40.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_74'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{moz:profile=C:\Users\alexyang\AppData\Local\Temp\rust_mozprofile.4Qxq6L4tZWqx, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0, platformVersion=6.3, moz:processID=9208, browserName=firefox, platformName=windows_nt}]<br>Session ID: e42b061c-6479-4543-9b53-de0ba1e45a9e<br>	at java.lang.reflect.Constrructor.newInstance(Unknown Source)<br>	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java::127)<br>	at org.openqa.selenium.remote.http.W3CHtttpResponseCodec.decode(W3CHttpResponseCodec.java:93)<br>	at org.openqa.selenium.remote.http.W3CHtttpResponseCodec.decode(W3CHttpResponseCodec.java:42)<br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)<br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br>	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)<br>	att org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:902)<br>	at junitpack.ScreenshotTests.Account_Setting(ScreenshotTests.java:29)<br>
-</code></td><td>4.916</td>
+<code>org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}], required capabilities = Capabilities [{}]<br>Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'<br>System info: host: 'TPE-Alex-Yang', ip: '192.168.40.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_74'<br>Driver info: driver.version: RemoteWebDriver<br>	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocollHandshake.java:91)<br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br>	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)<br>	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)<br>	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.jjava:155)<br>	at junitpack.ScreenshotTests.execute(ScreenshotTests.java:36)<br>	at junitpack.ScreenshotTests.executeFFirefoxDriver(ScreenshotTests.java:33)<br>
+</code></td><td>0.616</td>
 </tr>
 </table>
 <div class="Properties">

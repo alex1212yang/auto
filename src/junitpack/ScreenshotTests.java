@@ -21,21 +21,25 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class ScreenshotTests {
-	private static GeckoDriverService service;
-	
-    private WebDriver driver;
+
 
 		@Test
-		public void Account_Setting() throws Exception {
-					System.setProperty("webdriver.ie.driver", "D:\\IEDriverServer.exe");
-					//service = new ChromeDriverService.Builder().usingDriverExecutable(new File("D:\\ChromeDriver.exe")).usingAnyFreePort().build();
-					//service = new GeckoDriverService.Builder().usingDriverExecutable(new File("D:\\geckodriver.exe")).usingAnyFreePort().build();
+		public void executeFirefoxDriver() throws InterruptedException, Exception {
+			this.execute(DesiredCapabilities.firefox());
+		}
+		private void execute(final DesiredCapabilities capability) throws InterruptedException, Exception {
+			WebDriver driverChrome = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+		//public void Account_Setting() throws Exception {
+					//System.setProperty("webdriver.ie.driver", "D:\\IEDriverServer.exe");
 					//System.setProperty("webdriver.ie.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/IEDriverServer.exe");
 					//System.setProperty("webdriver.chrome.driver", "C:/Users/alexyang/workspace/junitproject_kalay_vsaas_3.0/ChromeDriver.exe");
 					//WebDriver driverChrome= new FirefoxDriver();
-					WebDriver driverChrome= new InternetExplorerDriver();
+					//WebDriver driverChrome= new InternetExplorerDriver();
 					//WebDriver driverChrome= new ChromeDriver();
 					
 					
