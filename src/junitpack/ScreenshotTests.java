@@ -32,6 +32,14 @@ public class ScreenshotTests {
 		public void executeFirefoxDriver() throws InterruptedException, Exception {
 			this.execute(DesiredCapabilities.firefox());
 		}
+//		public void executeFirefoxDriver() throws InterruptedException, Exception {
+//			this.execute(DesiredCapabilities.firefox());
+//		}
+		@Test
+		public void executeChrome() throws InterruptedException, Exception {
+			this.execute(DesiredCapabilities.chrome());
+		}
+
 		private void execute(final DesiredCapabilities capability) throws InterruptedException, Exception {
 			WebDriver driverChrome = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
 		//public void Account_Setting() throws Exception {
