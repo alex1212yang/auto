@@ -32,9 +32,10 @@ public class ScreenshotTests {
 		public void executeFirefoxDriver() throws InterruptedException, Exception {
 			this.execute(DesiredCapabilities.firefox());
 		}
-//		public void executeFirefoxDriver() throws InterruptedException, Exception {
-//			this.execute(DesiredCapabilities.firefox());
-//		}
+		@Test
+		public void executeInternetExplorerDriver() throws InterruptedException, Exception {
+			this.execute(DesiredCapabilities.internetExplorer());
+		}
 		@Test
 		public void executeChrome() throws InterruptedException, Exception {
 			this.execute(DesiredCapabilities.chrome());
